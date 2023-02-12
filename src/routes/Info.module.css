@@ -1,0 +1,107 @@
+body::-webkit-scrollbar {
+  width: 10px; /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 20%; /* 스크롤바의 길이 */
+  background: rgba(255, 255, 255, 0.8); /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(20, 0, 0, 0.8); /*스크롤바 뒷 배경 색상*/
+}
+body {
+  position: relative;
+}
+.icon__home {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  color: white;
+  font-size: 2em;
+}
+.container:not(hr) {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  padding-left: 12%;
+}
+
+.introduce {
+  height: 92%;
+  display: flex;
+  align-items: center;
+}
+
+.introduce img {
+  width: 22%;
+  height: 72%;
+  margin-right: 4%;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+}
+.introduce img:hover {
+  transform: scale(1.08);
+}
+
+.introduce__text {
+  height: auto;
+  width: 30%;
+  font-style: italic;
+  background-color: rgba(20, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 0 2%;
+}
+strong {
+  font-size: 3.6em;
+  font-weight: 800;
+  line-height: 2em;
+}
+.introduce__text span {
+  display: block;
+  font-size: 2em;
+  margin-left: 4%;
+}
+.introduce__text p {
+  font-size: 1.6em;
+  margin-left: 8%;
+  padding-bottom: 8%;
+}
+.counts {
+  display: block;
+  font-size: 2em;
+  margin-left: 1%;
+}
+hr {
+  margin-bottom: 4%;
+}
+.card {
+  margin-left: 2%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+}
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+
+  height: 40px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  border-top: 2px solid #b50119;
+  border-right: 2px solid transparent;
+  border-bottom: none;
+  border-left: none;
+  animation: spinner5 700ms linear infinite;
+}
+
+@keyframes spinner5 {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,198 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://i.pinimg.com/originals/07/90/56/079056faeaf0bed653ef1e81afcdb91c.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.title {
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  font-size: 6em;
+  font-weight: 800;
+  color: white;
+}
+.Home {
+  width: 80vw;
+  height: 70vh;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.Home::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+.Home::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: rgba(255, 255, 255, 0.8); /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+
+.Home::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3); /*스크롤바 뒷 배경 색상*/
+}
+.container {
+  display: flex;
+  align-items: center;
+  margin: 2% 0 0 4%;
+}
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+
+  height: 40px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  border-top: 2px solid #b50119;
+  border-right: 2px solid transparent;
+  border-bottom: none;
+  border-left: none;
+  animation: spinner5 700ms linear infinite;
+}
+
+@keyframes spinner5 {
+  to {
+    transform: rotate(360deg);
+  }
+}

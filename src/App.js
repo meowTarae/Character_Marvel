@@ -3,7 +3,7 @@ import Home from "./routes/Home";
 import Info from "./routes/Info";
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/character/:id">
           <Info />

@@ -26,7 +26,7 @@ function Info() {
     (async () => {
       const json = await (
         await fetch(
-          `http://gateway.marvel.com/v1/public/characters/${id}/events?ts=1&apikey=54ebf5827b666f2422e2300c7f0353a0&hash=0d206750755a1c4f5ebfaf0f62fa929e`
+          `http://gateway.marvel.com/v1/public/characters/${id}/events${process.env.REACT_APP_API_KEY}`
         )
       ).json();
       setSeries(json.data.results);
